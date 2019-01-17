@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html >
+<head>
+<meta charset="utf-8" />
+<meta name="author" content="Design:; Web Layout:yan.xu;"/>
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+<meta content="telephone=no" name="format-detection" />
+<meta content="email=no" name="format-detection" />
+<title>Alita: Battle Angel</title>
+<meta name="Keywords" content=""/>
+<meta name="description" content=""/>
+<link href="css/main.css" rel="stylesheet" type="text/css">
+<link href="css/swiper.3.4.1.css" rel="stylesheet" type="text/css">
+<link href="css/animate.min.css" rel="stylesheet" type="text/css">
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?416e86cae34c1ed76d47cf9945e0d941";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+<style type="text/css">
+.swiper-container-horizontal>.swiper-pagination-bullets, .swiper-pagination-custom, .swiper-pagination-fraction{    bottom: 0px;
+    left: 0;
+    width: 100%;}
+</style>
+</head>
+<body id="section1">
+<div class="wrap">
+  <div class="page_1"> 
+    <!--按钮-->
+      <a href="http://smarturl.it/chb1"><div class="logo  ani"></div></a> 
+
+  </div>
+   
+
+  
+  <div class="page_5 cf">
+    <div class="mainShow cf">
+     
+      <div class="swiper-container box3">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"><img src="images/fot_pic1.jpg" alt=""/></div>
+          <div class="swiper-slide"><img src="images/fot_pic2.jpg" alt=""/></div>
+          <div class="swiper-slide"><img src="images/fot_pic3.jpg" alt=""/></div>
+          <div class="swiper-slide"><img src="images/fot_pic4.jpg" alt=""/></div>
+          <div class="swiper-slide"><img src="images/fot_pic5.jpg" alt=""/></div>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+  <a href="http://smarturl.it/chb2"><div class="btn3"></div></a> 
+  <div class="tip"> 
+   </div>
+  
+    <!--按钮-->
+      
+
+  
+  
+</div>
+
+
+<script type="text/javascript" src="js/jquery.min.js"></script> 
+<script type="text/javascript" src="js/swiper.3.4.1.js"></script> 
+<script type="text/javascript" src="js/index.js"></script>
+<script>
+    function IsIos(){
+        var userAgentInfo = navigator.userAgent;
+        var Agents = new Array("iPhone", "iPad", "iPod");
+        var flag = true;
+        for (var v = 0; v < Agents.length; v++) {
+            if (userAgentInfo.indexOf(Agents[v]) > 0) { flag = false; break; }
+        }
+        return flag;
+    }
+$(function(){
+/*
+var userAgentinfo = navigator.userAgent;
+if((userAgentinfo.indexOf("iPhone") != -1)||(userAgentinfo.indexOf("iPad") != -1)||(userAgentinfo.indexOf("iPod") != -1)){
+	$("#downLoad").addClass("yy_btn1");
+	$("#downLoad").attr("href","https://itunes.apple.com/cn/app/id1326760593?mt=8"); 
+    }else{
+	$("#downLoad").addClass("yy_btn");
+	$("#downLoad").attr("href","http://bleach.kunlun.com/yuyue/"); 
+    }
+*/
+
+                if(IsIos()) {
+        $("#downLoad").addClass("yy_btn");
+        $("#downLoad").attr("href","https://cn1-bleach.static.kunlun.com/package/android/files/bleach_kunlun_2.0.5_1122.0232_dev1.apk"); 
+                }else{
+        $("#downLoad").addClass("yy_btn1");
+        $("#downLoad").attr("href","https://itunes.apple.com/cn/app/id1326760593?mt=8"); 
+
+                }  
+/*
+	$("#downLoad").click(function(){
+		if(IsIos()) {
+			//$("").removeClass("aaa").addClass("bbb");
+			window.open("http://bleach.kunlun.com/yuyue");
+			//window.open("https://cn1-bleach.static.kunlun.com/package/android/files/bleach_kunlun_2.0.5_1122.0232_dev1.apk");
+		}else{
+			alert('仅安卓测试，IOS敬请期待');
+			window.open("http://bleach.kunlun.com/yuyue");
+		}		
+	})
+*/
+})
+</script>
+</body>
+</html>
