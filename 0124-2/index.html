@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html >
+<head>
+<meta charset="utf-8" />
+<meta name="author" content="Design:; Web Layout:yan.xu;"/>
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+<meta content="telephone=no" name="format-detection" />
+<meta content="email=no" name="format-detection" />
+<title>Moments</title>
+<meta name="Keywords" content=""/>
+<meta name="description" content=""/>
+<link href="css/main.css" rel="stylesheet" type="text/css">
+<link href="css/animate.min.css" rel="stylesheet" type="text/css">
+
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?416e86cae34c1ed76d47cf9945e0d941";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+
+</script>
+
+</head>
+<body id="section1">
+<div class="wrap">
+  <div class="page_header"> </div>
+  <div class="page_title"> </div>
+  <div class="main_title"> <img src="images/icon_03.png"></div>
+  <div class="icon"><img src="images/icon_07.png"></div>
+  <div class="input1" >
+		<P ><input name="" type="text"  class="text_content1" id="text_content1" readonly  data-clipboard-text='2222'></P>
+  </div>
+               
+	 <div class="chaxun_btn"  id="playbtn"> <img src="images/copy_btn.png"></div>
+  <div class="btn"><a href="https://go.onelink.me/BqI9?pid=Invite&is_retargeting=true"><img src="images/btn_03.png"></a></div> 
+</div>
+
+<script type="text/javascript" src="js/jquery.min.js"></script> 
+<script type="text/javascript" src="js/index.js"></script>
+<script src="js/clipboard.min.js"></script>
+<script>
+function getUrlParams(key) {
+    try{ return new RegExp("(\\?|&)" + key + "=([^&]*)(&|$)").exec(location.href)[2] } catch (e) {}
+}
+var invitecode=getUrlParams("invitecode")
+window.onload= function(){
+	if (invitecode) {
+		 var clipboard = new ClipboardJS('#playbtn');
+		  document.getElementById('playbtn').setAttribute('data-clipboard-text', invitecode);
+		  document.getElementById('text_content1').value = invitecode;
+			clipboard.on('success', function(e) {
+				alert('Copied Successfully')
+			});
+			clipboard.on('error', function(e) {
+				console.log(e);
+			});
+	}else{
+		return;
+	}
+
+}
+
+</script>
+<script>
+    function IsIos(){
+        var userAgentInfo = navigator.userAgent;
+        var Agents = new Array("iPhone", "iPad", "iPod");
+        var flag = true;
+        for (var v = 0; v < Agents.length; v++) {
+            if (userAgentInfo.indexOf(Agents[v]) > 0) { flag = false; break; }
+        }
+        return flag;
+    }
+
+</script>
+</body>
+</html>
