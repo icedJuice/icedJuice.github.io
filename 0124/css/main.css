@@ -1,0 +1,29 @@
+html,body,ul,ol,h1,h2,h3,h4,h5,h6,p,th,td,dl,dt,dd,form,input,textarea,select,.cf{margin:0;padding:0;}
+body{font-size:.12rem; font-family: Helvetica, Microsoft YaHei, Tohoma, Arial;}
+h1,h2,h3,h4,h5,h6,b{font-weight: normal;}
+a{text-decoration:none;outline:none;}
+li{list-style:none}
+img{border:none;vertical-align:middle;}
+html{overflow-x:hidden;overflow:-Scroll;overflow-x:hidden}
+/*浮动清理*/
+.cf:before,.cf:after{content:".";display:block;height:0;visibility:hidden}
+.cf:after{clear:both}
+.cf{zoom:1}
+
+
+.wrap{ margin:0 auto;  width:7.5rem; position:relative;}
+.page_header{ background:url(../images/head_img.png) no-repeat; width:7.5rem; height:5.69rem;background-size: 100% 100%;}
+.page_title{ background:url(../images/intro_title.png) no-repeat; width:7.5rem; height:1.28rem;background-size: 100% 100%;}
+
+.main_title,.icon,.btn{width: 7.5rem;background-size: 100% 100%; text-align:center;}
+.main_title{height:0.53rem; margin-top: 0.6rem; margin-bottom: 0.6rem;}
+.icon{height:1.92rem; margin-top:1.6rem;margin-bottom:0.5rem;}
+.btn3{height:0.79rem;}
+.main_title img{width:4.15rem; height:0.53rem;}
+.icon img{width:1.92rem; height:1.92rem;}
+.btn img{width:3.5rem; height:0.79rem;}
+
+.input1 {   height:0.66rem; width: 3.86rem; position: absolute; top: 8.5rem;  left:1.59rem;text-align: center; border:1px solid #dbdbdb; border-radius:0.1rem;}
+.text_content1{width:3.86rem; height:0.66rem; line-height:0.66rem; background:none; font-size:0.2rem; float:left; border:none; overflow:hidden;text-align:center;color:#665829;}
+.chaxun_btn{    position: absolute;top: 8.5rem;left: 5.55rem;}
+.chaxun_btn img{     width: 0.66rem; height: 0.65rem;}
