@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title></title>
+	</head>
+	<style type="text/css">
+		html,body{
+			margin: 0;
+			padding: 0;
+			font-size: 20px;
+			height: 100%;
+		}
+		.div{
+			height: 100vh;
+			overflow-y: scroll;
+		}
+		.btn-container{
+			height: 50px;
+		}
+		.btn-wrap{
+			width: 100%;
+			height: 50px;
+			text-align: center;
+		}
+		.fixed .btn-wrap{
+			position: fixed;
+			left: 0;bottom: 20px;
+		}
+		button{
+			background-color: crimson;
+			font-size: 24px;
+			text-align: center;
+			line-height: 50px;
+			width: 80%;
+			color: #fff;
+			border-radius: 8px;
+		}
+	</style>
+	<body>
+		<div class="div">
+			111 <br>
+			222<br>
+			333<br>
+			444<br>
+			<br>
+			<br>
+			<br>
+			111 <br>
+			222<br>
+			333<br>
+			444<br>
+			<br>
+			<br>
+			<br>111 <br>
+			222<br>
+			333<br>
+			444<br>
+			<br>
+			<br>
+			<br>111 <br>
+			222<br>
+			333<br>
+			444<br>
+			<br>
+			<br>
+			<br>111 <br>
+			222<br>
+			333<br>
+			444<br>
+			<br>
+			<br>
+			<br>111 <br>
+			222<br>
+			333<br>
+			444<br>
+			<br>
+			<br>
+			<br>111 <br>
+			222<br>
+			333<br>
+			444<br>
+			<br>
+			<br>
+			<br>111 <br>
+			222<br>
+			333<br>
+			444<br>
+			
+			<div class="btn-container">
+				<div class="btn-wrap">
+					<button type="button">按钮</button>
+				</div>
+			</div>
+			
+			
+			<br>
+			<br>
+			<br>111 <br>
+			222<br>
+			333<br>
+			444<br>
+			<br>
+			<br>
+			<br>111 <br>
+			222<br>
+			333<br>
+			444<br>
+			<br>
+			<br>
+			<br>
+		</div>
+		
+		
+		
+		<script type="text/javascript">
+			
+			var btn = document.getElementsByClassName('btn-container')[0];
+			
+			var btnTop = btn.getBoundingClientRect().top;
+			
+			var winHeight = document.documentElement.clientHeight;
+			
+			function watchScroll(e) {
+				
+				if (this.scrollTop + winHeight < btnTop + 75 && !/fixed/.test(btn.className)) {
+					
+					btn.className = btn.className + ' fixed'
+					
+				} else if (this.scrollTop + winHeight > btnTop + 75 && /fixed/.test(btn.className)) {
+					
+					btn.className = btn.className.replace(' fixed', '')
+					
+				}
+				
+			}
+			
+			document.getElementsByClassName('div')[0].onscroll = watchScroll;
+			
+			window.onload = function () {
+				
+				watchScroll.call(document.getElementsByClassName('div')[0]);
+			}
+		</script>
+	</body>
+</html>
