@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/loading.css">
+    <link rel="stylesheet" href="css/mian.css">
+</head>
+<body>
+    <div class="main-container">
+    	<!--背景-->
+    	<div class="bg-container fixed">
+    		<div class="bg-wrapper cont-wrapper">
+    			<video autobuffer="" autoloop="" autoplay loop class="bg" muted="">
+                    <source src="media/scenery0.mp4">
+                </video>
+    		</div>
+    	</div>
+        
+    	<!--月亮层
+		<div class="month-container fixed">
+			<div class="cont-wrapper" id="month-wrapper">
+    			<img src="images/zyt-month.png"/>
+    		</div>
+		</div>-->
+		<!--石头层， 如果有的话
+		<div class="stone-container fixed">
+			<div class="cont-wrapper" id="stone-wrapper ">
+    			<img src="images/zyt-stone.png"/>
+    		</div>
+		</div>-->
+		<!--塔层-->
+		<div class="ta-container fixed">
+        	<!--<div class="gifinner"></div>-->
+        	
+			<div class="cont-wrapper" id="ta-wrapper"></div>
+		</div>
+        <!--主题内容-->
+        <div class="index-content">
+           
+            <!--激活首测资格-->
+            <a href="javascript:void(0)" class="btn-play"></a>
+            <!--关注微博-->
+            <div class="weibo-box">
+                <span class="btn-weibo btn"></span>
+                <div class="weibo-content content">
+                    <span class="handle"></span>
+                    <img src="images/weibo.jpg" class="weibo ewm" alt="">
+                </div>
+            </div>
+            <div class="gzh-box">
+                <span class="btn-gzh btn"></span>
+                <div class="gzh-content content">
+                    <span class="handle"></span>
+                    <img src="images/gzh.jpg" class="gzh ewm" alt="">
+                </div>
+            </div>
+            <div class="qq-box">
+                <span class="btn-qq btn"></span>
+                <div class="qq-content content">
+                    <span class="handle"></span>
+                    <img src="images/qq.jpg" class="qq ewm" alt="">
+                </div>
+            </div>
+        </div>
+        <!--首次测试弹出-->
+        <div class="tan_ce">
+            <span class="bg"></span>
+            <div class="tan">
+            	<div class="close"><img src="images/video_pop_close.png"></div>
+        		<div class="btn1">
+       		   	 	<img src="images/yin_r.jpg"> 
+                </div>               
+                <div class="ma_download1">
+                    <span><input name="" type="radio" value=""></span><span>Android</span>
+                    <span><input name="" type="radio" value=""></span><span>iOS</span>
+                </div>
+                <div class="input1" >
+                	<P ><input name="" type="text"  class="text_content1"/></P>
+                </div>
+                <div class="login_btn"><a class='iframe' href="result.html"></a></div>
+                <div class="chaxun_btn" id="six"><a href="#"></a></div>
+                 
+        	</div>
+        </div>
+    </div>
+    <div class="preload-container" id="preload-container">
+    	<!--loading页的视频存放位置-->
+    	<div class="video-container">
+    		<video autobuffer="" autoplay class="bg" muted="">
+            	<source src="media/leaf.mp4">
+        	</video>
+    	</div>
+    	<!--loading页的 进度条-->
+    	<div class="process-container">
+        	<div id="loadingPage">
+        		<div class="loadingWrap">
+                    <div id="loader-wrapper"> 
+                        <div id="loader"></div> 
+                    </div> 
+        			<span id="loadingNum">0%</span>
+        		</div>
+        	</div>
+    	</div>
+    </div>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/Loading.jq.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
